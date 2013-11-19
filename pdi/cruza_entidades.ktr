@@ -1,0 +1,526 @@
+<transformation>
+  <info>
+    <name>cruza_entidades</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#47;</directory>
+    <parameters>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user>-</created_user>
+  <created_date>2013&#47;10&#47;31 22:28:19.563</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2013&#47;10&#47;31 23:50:37.511</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>conexao_infoseca</name>
+    <server>127.0.0.1</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>infoseca</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted </password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>entidades</from><to>Fuzzy match</to><enabled>Y</enabled> </hop>  <hop> <from>cadmun</from><to>Fuzzy match</to><enabled>Y</enabled> </hop>  <hop> <from>Fuzzy match</from><to>Filter rows</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows</from><to>Dummy (do nothing) 2</to><enabled>Y</enabled> </hop>  <hop> <from>Filter rows</from><to>Table output</to><enabled>Y</enabled> </hop>  </order>
+  <step>
+    <name>Dummy (do nothing) 2</name>
+    <type>Dummy</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>102</xloc>
+      <yloc>274</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Filter rows</name>
+    <type>FilterRows</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+<send_true_to>Table output</send_true_to>
+<send_false_to>Dummy (do nothing) 2</send_false_to>
+    <compare>
+<condition>
+ <negated>N</negated>
+ <leftvalue>match</leftvalue>
+ <function>IS NOT NULL</function>
+ <rightvalue/>
+ </condition>
+    </compare>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>167</xloc>
+      <yloc>190</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Fuzzy match</name>
+    <type>FuzzyMatch</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <from>cadmun</from>
+    <lookupfield>MUNNOMEX</lookupfield>
+    <mainstreamfield>entidade</mainstreamfield>
+    <outputmatchfield>match</outputmatchfield>
+    <outputvaluefield>measure value</outputvaluefield>
+    <caseSensitive>N</caseSensitive>
+    <closervalue>Y</closervalue>
+    <minimalValue>0</minimalValue>
+    <maximalValue>2</maximalValue>
+    <separator>,</separator>
+    <algorithm>levenshtein</algorithm>
+    <lookup>
+      <value>
+        <name>MUNCOD</name>
+        <rename>MUNCOD</rename>
+      </value>
+      <value>
+        <name>MUNCODDV</name>
+        <rename>MUNCODDV</rename>
+      </value>
+      <value>
+        <name>SITUACAO</name>
+        <rename>SITUACAO</rename>
+      </value>
+      <value>
+        <name>MUNSINP</name>
+        <rename>MUNSINP</rename>
+      </value>
+      <value>
+        <name>MUNSIAFI</name>
+        <rename>MUNSIAFI</rename>
+      </value>
+      <value>
+        <name>MUNNOME</name>
+        <rename>MUNNOME</rename>
+      </value>
+      <value>
+        <name>MUNNOMEX</name>
+        <rename>MUNNOMEX</rename>
+      </value>
+      <value>
+        <name>OBSERV</name>
+        <rename>OBSERV</rename>
+      </value>
+      <value>
+        <name>MUNSINON</name>
+        <rename>MUNSINON</rename>
+      </value>
+      <value>
+        <name>MUNSINONDV</name>
+        <rename>MUNSINONDV</rename>
+      </value>
+      <value>
+        <name>AMAZONIA</name>
+        <rename>AMAZONIA</rename>
+      </value>
+      <value>
+        <name>FRONTEIRA</name>
+        <rename>FRONTEIRA</rename>
+      </value>
+      <value>
+        <name>CAPITAL</name>
+        <rename>CAPITAL</rename>
+      </value>
+      <value>
+        <name>UFCOD</name>
+        <rename>UFCOD</rename>
+      </value>
+      <value>
+        <name>MESOCOD</name>
+        <rename>MESOCOD</rename>
+      </value>
+      <value>
+        <name>MICROCOD</name>
+        <rename>MICROCOD</rename>
+      </value>
+      <value>
+        <name>MSAUDCOD</name>
+        <rename>MSAUDCOD</rename>
+      </value>
+      <value>
+        <name>RSAUDCOD</name>
+        <rename>RSAUDCOD</rename>
+      </value>
+      <value>
+        <name>CSAUDCOD</name>
+        <rename>CSAUDCOD</rename>
+      </value>
+      <value>
+        <name>CIRCOD</name>
+        <rename>CIRCOD</rename>
+      </value>
+      <value>
+        <name>RMETRCOD</name>
+        <rename>RMETRCOD</rename>
+      </value>
+      <value>
+        <name>AGLCOD</name>
+        <rename>AGLCOD</rename>
+      </value>
+      <value>
+        <name>ANOINST</name>
+        <rename>ANOINST</rename>
+      </value>
+      <value>
+        <name>ANOEXT</name>
+        <rename>ANOEXT</rename>
+      </value>
+      <value>
+        <name>SUCESSOR</name>
+        <rename>SUCESSOR</rename>
+      </value>
+      <value>
+        <name>LATITUDE</name>
+        <rename>LATITUDE</rename>
+      </value>
+      <value>
+        <name>LONGITUDE</name>
+        <rename>LONGITUDE</rename>
+      </value>
+      <value>
+        <name>ALTITUDE</name>
+        <rename>ALTITUDE</rename>
+      </value>
+      <value>
+        <name>AREA</name>
+        <rename>AREA</rename>
+      </value>
+    </lookup>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>167</xloc>
+      <yloc>113</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>cadmun</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>conexao_infoseca</connection>
+    <sql>SELECT * FROM infoseca.cadmun c</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>230</xloc>
+      <yloc>16</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>entidades</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>conexao_infoseca</connection>
+    <sql>SELECT e.* FROM entidades e  </sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>59</xloc>
+      <yloc>22</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>conexao_infoseca</connection>
+    <schema/>
+    <table>entidades_relacionadas</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+        <field>
+          <column_name>id_url</column_name>
+          <stream_name>id_url</stream_name>
+        </field>
+        <field>
+          <column_name>entidade</column_name>
+          <stream_name>entidade</stream_name>
+        </field>
+        <field>
+          <column_name>tipo</column_name>
+          <stream_name>tipo</stream_name>
+        </field>
+        <field>
+          <column_name>begin</column_name>
+          <stream_name>begin</stream_name>
+        </field>
+        <field>
+          <column_name>end</column_name>
+          <stream_name>end</stream_name>
+        </field>
+        <field>
+          <column_name>match</column_name>
+          <stream_name>match</stream_name>
+        </field>
+        <field>
+          <column_name>measure value</column_name>
+          <stream_name>measure value</stream_name>
+        </field>
+        <field>
+          <column_name>MUNCOD</column_name>
+          <stream_name>MUNCOD</stream_name>
+        </field>
+        <field>
+          <column_name>MUNCODDV</column_name>
+          <stream_name>MUNCODDV</stream_name>
+        </field>
+        <field>
+          <column_name>SITUACAO</column_name>
+          <stream_name>SITUACAO</stream_name>
+        </field>
+        <field>
+          <column_name>MUNSINP</column_name>
+          <stream_name>MUNSINP</stream_name>
+        </field>
+        <field>
+          <column_name>MUNSIAFI</column_name>
+          <stream_name>MUNSIAFI</stream_name>
+        </field>
+        <field>
+          <column_name>MUNNOME</column_name>
+          <stream_name>MUNNOME</stream_name>
+        </field>
+        <field>
+          <column_name>MUNNOMEX</column_name>
+          <stream_name>MUNNOMEX</stream_name>
+        </field>
+        <field>
+          <column_name>OBSERV</column_name>
+          <stream_name>OBSERV</stream_name>
+        </field>
+        <field>
+          <column_name>MUNSINON</column_name>
+          <stream_name>MUNSINON</stream_name>
+        </field>
+        <field>
+          <column_name>MUNSINONDV</column_name>
+          <stream_name>MUNSINONDV</stream_name>
+        </field>
+        <field>
+          <column_name>AMAZONIA</column_name>
+          <stream_name>AMAZONIA</stream_name>
+        </field>
+        <field>
+          <column_name>FRONTEIRA</column_name>
+          <stream_name>FRONTEIRA</stream_name>
+        </field>
+        <field>
+          <column_name>CAPITAL</column_name>
+          <stream_name>CAPITAL</stream_name>
+        </field>
+        <field>
+          <column_name>UFCOD</column_name>
+          <stream_name>UFCOD</stream_name>
+        </field>
+        <field>
+          <column_name>MESOCOD</column_name>
+          <stream_name>MESOCOD</stream_name>
+        </field>
+        <field>
+          <column_name>MICROCOD</column_name>
+          <stream_name>MICROCOD</stream_name>
+        </field>
+        <field>
+          <column_name>MSAUDCOD</column_name>
+          <stream_name>MSAUDCOD</stream_name>
+        </field>
+        <field>
+          <column_name>RSAUDCOD</column_name>
+          <stream_name>RSAUDCOD</stream_name>
+        </field>
+        <field>
+          <column_name>CSAUDCOD</column_name>
+          <stream_name>CSAUDCOD</stream_name>
+        </field>
+        <field>
+          <column_name>CIRCOD</column_name>
+          <stream_name>CIRCOD</stream_name>
+        </field>
+        <field>
+          <column_name>RMETRCOD</column_name>
+          <stream_name>RMETRCOD</stream_name>
+        </field>
+        <field>
+          <column_name>AGLCOD</column_name>
+          <stream_name>AGLCOD</stream_name>
+        </field>
+        <field>
+          <column_name>ANOINST</column_name>
+          <stream_name>ANOINST</stream_name>
+        </field>
+        <field>
+          <column_name>ANOEXT</column_name>
+          <stream_name>ANOEXT</stream_name>
+        </field>
+        <field>
+          <column_name>SUCESSOR</column_name>
+          <stream_name>SUCESSOR</stream_name>
+        </field>
+        <field>
+          <column_name>LATITUDE</column_name>
+          <stream_name>LATITUDE</stream_name>
+        </field>
+        <field>
+          <column_name>LONGITUDE</column_name>
+          <stream_name>LONGITUDE</stream_name>
+        </field>
+        <field>
+          <column_name>ALTITUDE</column_name>
+          <stream_name>ALTITUDE</stream_name>
+        </field>
+        <field>
+          <column_name>AREA</column_name>
+          <stream_name>AREA</stream_name>
+        </field>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>393</xloc>
+      <yloc>196</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+</transformation>
